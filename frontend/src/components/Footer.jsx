@@ -59,11 +59,6 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="#gallery" className="text-secondary hover:text-accent-primary transition-colors">
-                Galeria
-              </a>
-            </li>
-            <li>
               <a href="#contact" className="text-secondary hover:text-accent-primary transition-colors">
                 Contato
               </a>
