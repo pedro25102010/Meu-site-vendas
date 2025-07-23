@@ -72,13 +72,6 @@ const Header = () => {
                 Catálogo
               </a>
               <a
-                href="#gallery"
-                className="block px-3 py-2 text-secondary hover:text-primary transition-colors"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Galeria
-              </a>
-              <a
                 href="#contact"
                 className="block px-3 py-2 text-secondary hover:text-primary transition-colors"
                 onClick={() => setIsMenuOpen(false)}
@@ -95,10 +88,6 @@ const Header = () => {
                   <MessageCircle size={20} />
                   <span>WhatsApp</span>
                 </a>
-                <button className="flex items-center space-x-2 px-3 py-2 text-secondary hover:text-primary transition-colors">
-                  <Users size={20} />
-                  <span>Discord</span>
-                </button>
               </div>
             </div>
           </div>
