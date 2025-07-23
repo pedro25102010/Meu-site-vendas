@@ -40,10 +40,6 @@ const Header = () => {
               <MessageCircle size={20} />
               <span>WhatsApp</span>
             </a>
-            <button className="btn-ghost flex items-center space-x-2">
-              <Users size={20} />
-              <span>Discord</span>
-            </button>
           </div>
 
           {/* Mobile menu button */}
