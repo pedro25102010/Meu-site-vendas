@@ -24,12 +24,12 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-            <a href="#gallery" className="btn-primary">
-              Ver Brainrots Disponíveis
+            <a href="#catalog" className="btn-primary">
+              Ver Catálogo Disponível
             </a>
-            <button className="btn-secondary">
-              Como Funciona
-            </button>
+            <a href="#gallery" className="btn-secondary">
+              Explorar Galeria
+            </a>
           </div>
 
           {/* Stats */}
