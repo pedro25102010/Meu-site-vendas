@@ -129,9 +129,6 @@ const Catalog = () => {
                 <MessageCircle size={20} />
                 <span>Consultar WhatsApp</span>
               </a>
-              <a href="#gallery" className="btn-secondary">
-                Ver Galeria Completa
-              </a>
             </div>
           </div>
         </div>
