@@ -31,16 +31,6 @@ const Footer = () => {
             >
               <MessageCircle size={20} />
             </a>
-            <button
-              className="footer-social-link"
-              title="Discord"
-              onClick={() => {
-                navigator.clipboard.writeText(contactInfo.discord);
-                alert('Discord copiado!');
-              }}
-            >
-              <Users size={20} />
-            </button>
           </div>
         </div>
 
