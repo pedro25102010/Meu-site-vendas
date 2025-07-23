@@ -1,5 +1,5 @@
 import React from 'react';
-import { MessageCircle, Users, Star, Zap } from 'lucide-react';
+import { MessageCircle, Star, Zap } from 'lucide-react';
 import { contactInfo } from '../data/mock';
 
 const Footer = () => {
