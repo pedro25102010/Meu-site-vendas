@@ -72,11 +72,18 @@ const Header = () => {
                 Início
               </a>
               <a
+                href="#catalog"
+                className="block px-3 py-2 text-secondary hover:text-primary transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Catálogo
+              </a>
+              <a
                 href="#gallery"
                 className="block px-3 py-2 text-secondary hover:text-primary transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Brainrots
+                Galeria
               </a>
               <a
                 href="#contact"
