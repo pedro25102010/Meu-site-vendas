@@ -7,7 +7,7 @@ const BrainrotCard = ({ brainrot }) => {
     const message = `Olá! Gostaria de comprar o Brainrot *${brainrot.name}* (${brainrot.rarity}) por ${brainrot.price}. Como posso prosseguir?`;
     const encodedMessage = encodeURIComponent(message);
     const whatsappUrl = `${contactInfo.whatsappLink}?text=${encodedMessage}`;
-    window.open(whatsappUrl, '_blank');
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
   };
 
   const getRarityIcon = (rarity) => {
