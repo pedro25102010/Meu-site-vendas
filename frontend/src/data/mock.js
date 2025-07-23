@@ -160,6 +160,6 @@ export const brainrots = [
 
 export const contactInfo = {
   discord: "LojabrainrotBR#1234",
-  whatsapp: "+55 11 99999-9999",
-  whatsappLink: "https://wa.me/5511999999999"
+  whatsapp: "+55 98 99186-9571",
+  whatsappLink: "https://wa.me/5598991869571"
 };
