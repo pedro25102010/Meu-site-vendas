@@ -54,8 +54,13 @@ const Footer = () => {
               </a>
             </li>
             <li>
+              <a href="#catalog" className="text-secondary hover:text-accent-primary transition-colors">
+                Catálogo
+              </a>
+            </li>
+            <li>
               <a href="#gallery" className="text-secondary hover:text-accent-primary transition-colors">
-                Brainrots
+                Galeria
               </a>
             </li>
             <li>
