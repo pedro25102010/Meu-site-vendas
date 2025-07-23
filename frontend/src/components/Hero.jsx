@@ -27,8 +27,8 @@ const Hero = () => {
             <a href="#catalog" className="btn-primary">
               Ver Catálogo Disponível
             </a>
-            <a href="#gallery" className="btn-secondary">
-              Explorar Galeria
+            <a href="#contact" className="btn-secondary">
+              Entrar em Contato
             </a>
           </div>
 
