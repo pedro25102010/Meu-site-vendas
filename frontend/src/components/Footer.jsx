@@ -84,10 +84,6 @@ const Footer = () => {
               <p className="text-secondary">{contactInfo.whatsapp}</p>
             </div>
             <div>
-              <p className="body-sm text-muted mb-1">Discord</p>
-              <p className="text-secondary">{contactInfo.discord}</p>
-            </div>
-            <div>
               <p className="body-sm text-muted mb-1">Horário</p>
               <p className="text-secondary">9h às 22h (Todos os dias)</p>
             </div>
