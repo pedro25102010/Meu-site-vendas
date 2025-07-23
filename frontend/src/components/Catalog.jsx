@@ -7,7 +7,7 @@ const CatalogCard = ({ brainrot }) => {
     const message = `Olá! Gostaria de comprar o ${brainrot.name} (${brainrot.type}) por ${brainrot.price}. Como posso prosseguir?`;
     const encodedMessage = encodeURIComponent(message);
     const whatsappUrl = `${contactInfo.whatsappLink}?text=${encodedMessage}`;
-    window.open(whatsappUrl, '_blank');
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
   };
 
   const getTypeColor = (type) => {
