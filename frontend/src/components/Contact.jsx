@@ -7,7 +7,7 @@ const Contact = () => {
     const message = "Olá! Gostaria de saber mais sobre os Brainrots disponíveis. Podem me ajudar?";
     const encodedMessage = encodeURIComponent(message);
     const whatsappUrl = `${contactInfo.whatsappLink}?text=${encodedMessage}`;
-    window.open(whatsappUrl, '_blank');
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
   };
 
   const handleDiscordClick = () => {
