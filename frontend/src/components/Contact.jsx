@@ -1,5 +1,5 @@
 import React from 'react';
-import { MessageCircle, Users, Clock, Shield } from 'lucide-react';
+import { MessageCircle, Clock, Shield, Users } from 'lucide-react';
 import { contactInfo } from '../data/mock';
 
 const Contact = () => {
@@ -8,12 +8,6 @@ const Contact = () => {
     const encodedMessage = encodeURIComponent(message);
     const whatsappUrl = `${contactInfo.whatsappLink}?text=${encodedMessage}`;
     window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
-  };
-
-  const handleDiscordClick = () => {
-    // In a real app, this would open Discord or copy the Discord username
-    navigator.clipboard.writeText(contactInfo.discord);
-    alert('Discord copiado para a área de transferência!');
   };
 
   return (
@@ -26,12 +20,12 @@ const Contact = () => {
               Entre em <span className="text-accent-primary">Contato</span>
             </h2>
             <p className="body-lg text-secondary max-w-2xl mx-auto">
-              Nossa equipe está sempre pronta para ajudar. Entre em contato através 
-              dos nossos canais oficiais e tire todas as suas dúvidas.
+              Nossa equipe está sempre pronta para ajudar. Entre em contato 
+              através do nosso WhatsApp oficial e tire todas as suas dúvidas.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="grid md:grid-cols-1 gap-8 mb-12 max-w-md mx-auto">
             {/* WhatsApp Card */}
             <div className="feature-card text-center hover-lift">
               <div className="w-16 h-16 bg-green-500/10 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -50,27 +44,6 @@ const Contact = () => {
                 className="btn-primary"
               >
                 Conversar no WhatsApp
-              </button>
-            </div>
-
-            {/* Discord Card */}
-            <div className="feature-card text-center hover-lift">
-              <div className="w-16 h-16 bg-indigo-500/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Users className="text-indigo-400" size={32} />
-              </div>
-              <h3 className="h3 text-primary mb-3">Discord</h3>
-              <p className="body-md text-secondary mb-6">
-                Junte-se à nossa comunidade no Discord para suporte e novidades.
-              </p>
-              <div className="space-y-3 mb-6">
-                <p className="text-indigo-400 font-semibold">{contactInfo.discord}</p>
-                <p className="body-sm text-muted">Comunidade ativa 24/7</p>
-              </div>
-              <button
-                onClick={handleDiscordClick}
-                className="btn-secondary"
-              >
-                Copiar Discord
               </button>
             </div>
           </div>
