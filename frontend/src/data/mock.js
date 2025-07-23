@@ -8,7 +8,9 @@ export const catalogBrainrots = [
     price: "R$ 9,00",
     emoji: "🌳👮‍♂️",
     rarityColor: "#FF6B35",
-    description: "O mais poderoso Brainrot do jogo!"
+    description: "O mais poderoso Brainrot do jogo!",
+    isTopSeller: true,
+    topSellerRank: 1
   },
   {
     id: 2,
@@ -18,7 +20,9 @@ export const catalogBrainrots = [
     price: "R$ 7,00",
     emoji: "🦈🍬",
     rarityColor: "#FF6B35",
-    description: "Doce e poderoso como tubarão!"
+    description: "Doce e poderoso como tubarão!",
+    isTopSeller: true,
+    topSellerRank: 2
   },
   {
     id: 3,
@@ -38,6 +42,7 @@ export const catalogBrainrots = [
     price: "R$ 4,00",
     emoji: "🍊💪",
     quantity: "x4 disponíveis",
+    stockRemaining: 4,
     rarityColor: "#FF6B35",
     description: "Força laranja concentrada! (4 unidades)"
   },
@@ -49,6 +54,7 @@ export const catalogBrainrots = [
     price: "R$ 5,00",
     emoji: "🚂",
     quantity: "x2 disponíveis",
+    stockRemaining: 2,
     rarityColor: "#FF6B35",
     description: "Velocidade turbo máxima! (2 unidades)"
   },
@@ -70,7 +76,9 @@ export const catalogBrainrots = [
     price: "R$ 6,50",
     emoji: "☕",
     rarityColor: "#FF6B35",
-    description: "Energia caféica concentrada!"
+    description: "Energia caféica concentrada!",
+    isTopSeller: true,
+    topSellerRank: 3
   },
   {
     id: 8,
@@ -93,6 +101,13 @@ export const catalogBrainrots = [
     description: "Tigre doce como candy!"
   }
 ];
+
+// Função para obter os mais vendidos
+export const getTopSellers = () => {
+  return catalogBrainrots
+    .filter(item => item.isTopSeller)
+    .sort((a, b) => a.topSellerRank - b.topSellerRank);
+};
 
 // Mock data antigo para a galeria (mantido para compatibilidade)
 export const brainrots = [
